@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Erkaklar Kiyim Do‘koni</title>
+<link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav>
+  <h2>Men's Shop</h2>
+  <ul>
+    <li onclick="openPage('home')">Home</li>
+    <li onclick="openPage('purchase')">Purchase</li>
+    <li onclick="openPage('contact')">Bog‘lanish</li>
+  </ul>
+</nav>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="page active">
+  <h1>Kategoriyalar</h1>
+
+  <div class="categories">
+
+    <div class="cat" onclick="openCategory('krasofka')">
+      <img src="img/krasofka/1.jpg">
+      <p>Krasofka</p>
+    </div>
+
+    <div class="cat" onclick="openCategory('shim')">
+      <img src="img/shim/1.jpg">
+      <p>Shimlar</p>
+    </div>
+
+    <div class="cat" onclick="openCategory('kurtka')">
+      <img src="img/kurtka/1.jpg">
+      <p>Kurtkalar</p>
+    </div>
+
+    <div class="cat" onclick="openCategory('koylak')">
+      <img src="img/koylak/1.jpg">
+      <p>Ko‘ylaklar</p>
+    </div>
+
+    <div class="cat" onclick="openCategory('lofer')">
+      <img src="img/lofer/1.jpg">
+      <p>Lofer</p>
+    </div>
+
+    <div class="cat" onclick="openCategory('futbolka')">
+      <img src="img/futbolka/1.jpg">
+      <p>Futbolkalar</p>
+    </div>
+
+    <div class="cat" onclick="openCategory('sumka')">
+      <img src="img/sumka/1.jpg">
+      <p>Sumka</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products" class="page">
+  <h2 id="categoryTitle"></h2>
+  <div id="productList" class="product-grid"></div>
+</section>
+
+<!-- ================= PURCHASE ================= -->
+<section id="purchase" class="page">
+  <h2>Sotib olish</h2>
+
+  <form id="orderForm">
+
+    <label>Ismingiz:</label>
+    <input type="text" name="ism" required />
+
+    <label>Familya:</label>
+    <input type="text" name="fam" required />
+
+    <label>Telefon raqam:</label>
+    <input type="text" name="tel" required />
+
+    <label>Yashash joyi:</label>
+    <input type="text" name="joy" required />
+
+    <label>Tanlangan tovar:</label>
+    <input id="productName" type="text" readonly />
+
+    <label>Razmer:</label>
+    <input id="productSize" type="text" readonly />
+
+    <label>Rasm:</label>
+    <input id="productImg" type="text" readonly />
+
+    <button type="submit">Jo‘natish</button>
+  </form>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="page">
+  <h2>Bog‘lanish</h2>
+  <p>Telefon: +998 99.809.18.05</p>
+  <p>Instagram:</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
