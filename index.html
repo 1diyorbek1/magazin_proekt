@@ -80,11 +80,20 @@
     <label>Familya:</label>
     <input type="text" name="fam" required />
 
-    <label>Telefon raqam:</label>
-    <input type="text" name="tel" required />
+   <input type="tel" 
+       placeholder="+998 90 123 45 67" 
+       pattern="^\+998[0-9]{9}$"
+       required>
 
-    <label>Yashash joyi:</label>
-    <input type="text" name="joy" required />
+
+   <label for="location">Yashash joyi:</label>
+
+<select id="location">
+  <option value="">Tanlang...</option>
+  <option value="sergeli">Sergili</option>
+  <option value="chorvoq">Chorvoq</option>
+</select>
+
 
     <label>Tanlangan tovar:</label>
     <input id="productName" type="text" readonly />
@@ -109,3 +118,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
